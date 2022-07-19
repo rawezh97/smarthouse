@@ -23,9 +23,9 @@ while True:
         print ("Error : Can't read dht11_sensor!!!")
     elif tempreture <= 31 :
         GPIO.output(11 , False)
-        #GPIO.output(13 , True)
+        GPIO.output(13 , True)
     else :
-        #GPIO.output(13 , False)
+        GPIO.output(13 , False)
         GPIO.output(11 , True)
     if humidity >= 55 :
         GPIO.output(37 , True)
