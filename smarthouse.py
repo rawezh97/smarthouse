@@ -30,21 +30,23 @@ while True:
     if humidity >= 55 :
         GPIO.output(37 , True)
     else :
-        GPIO.output(37 , False)
-
-    GPIO.output(trig , True)
-    time.sleep(0.00001)
-    GPIO.output(trig , False)
-    while GPIO.input(echo) == 0:
-        start_pulse = time.time()
-    while GPIO.input(echo) == 1:
-        end_pulse = time.time()
-    pluse_duration = end_pulse - start_pulse
-    distance = round((pluse_duration * 34000)/2)
-    #during = round(distance , 2)
-    print (f"temp = {tempreture}*C hum = {humidity}% Distance : {distance} cm ")
-    if distance <50 :
-        GPIO.output(32 , True)
-    else :
-        GPIO.output(32 , False)
+        GPIO.output(37 , False)   
+    try :
+        GPIO.output(trig , True)
+        time.sleep(0.00001)
+        GPIO.output(trig , False)
+        while GPIO.input(echo) == 0:
+            start_pulse = time.time()
+        while GPIO.input(echo) == 1:
+            end_pulse = time.time()
+        pluse_duration = end_pulse - start_pulse
+        distance = round((pluse_duration * 34000)/2)
+        #during = round(distance , 2)
+        print (f"temp = {tempreture}*C hum = {humidity}% Distance : {distance} cm ")
+        if distance <50 :
+            GPIO.output(32 , True)
+        else :
+            GPIO.output(32 , False)
+    except:
+        print ("Can't detect distance!!!")
     time.sleep(0.5)
