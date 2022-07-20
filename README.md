@@ -21,7 +21,7 @@ and orange one for hieght humidity , purple for a move detection when
     - **Windows** you can find raspberry IP with [angryip](https://angryip.org/). or any ip scanning tool
     - **Linux** useing nmap so simple to find the ip sudo nmap -sn 192.168.1.1-254 
   - after find the IP you must try to enable SSH and VNC Viewer on the raspberry 
-    - you must download [putty](https://www.putty.org/). and use SSH to conect with the raspberry pi defualt **login:** pi **passowrd:** raspberry
+    - you must download [putty](https://www.putty.org/). and use SSH to conect with  the raspberry pi defualt **login:** pi **passowrd:** raspberry
     - after that you need to type  sudo raspi-config  and go ***Interfacing Option***  and enable the **SSH** and **VNC**
    - if you already enable ssh and vnc you shuld good to go 
      - we need a [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) to display the raspberry screen on our computer
