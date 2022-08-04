@@ -2,6 +2,8 @@ import Adafruit_DHT
 import time
 import RPi.GPIO as GPIO
 import RPi.GPIO as ultra
+import socket
+import requests# coming soon
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11 , GPIO.OUT)    #Tempreture  LED RED  GPIO 17
