@@ -1,4 +1,4 @@
-import Adafruit_DHT
+import Adafruit_DHT #pip install Adafruit_DHT
 import time
 import RPi.GPIO as GPIO
 import RPi.GPIO as ultra
