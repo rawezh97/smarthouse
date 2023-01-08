@@ -4,6 +4,7 @@ for normal weather the green LED will be on
 when the tempreture will be hieght the red LED on
 and orange one for hieght humidity , purple for a move detection when  
 
+
 -  Rquirments  
       - raspberry pi 3B+  
        
