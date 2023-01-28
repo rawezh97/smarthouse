@@ -41,6 +41,5 @@ python3 smarthouse.py
 ```
 
 
-
 # diagram 
 ![Screenshot at 2022-07-18 22-46-53](https://user-images.githubusercontent.com/92225352/179686109-ca3d37f9-fb05-4681-892d-0982539c4755.png)
