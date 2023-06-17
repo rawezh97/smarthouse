@@ -2,7 +2,7 @@
 this project detect the tempreture &amp; humidity move detection
 for normal weather the green LED will be on
 when the tempreture will be hieght the red LED on
-and orange one for hieght humidity , purple for a move detection when  
+and orange one for hieght humidity , purple for a move detection when   
 
 
 -  Rquirments  
